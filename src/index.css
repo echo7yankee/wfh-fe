@@ -1,13 +1,78 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --white-color: #f7f7f7;
+  --black-color-1: #333;
+  --grey-color-1: rgba(224, 224, 224, 0.7);
+  --grey-color-2: rgba(83, 83, 83, 0.7);
+  --purple-gradient-1: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  --purple-gradient-1-reversed: linear-gradient(
+    326deg,
+    #5f0a87 0%,
+    #a4508b 74%
+  );
+  --blue-color-1: #1072db;
+  --blue-color-hover-1: #2a89fd;
+  --blue-color-2: #4a90e2;
+  --green-color-1: #038a03;
+  --green-color-2: #add8ad;
+  --green-color-3: #65df3a;
+  --red-color-1: #d8000c;
+  --red-color-2: #ffd2d2;
+  --yellow-color-1: #ffc10a;
+  --yellow-color-hover-1: #e6b00e;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+  padding: 2rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+input,
+input:placeholder-shown {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  outline: none;
+  border: none;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.dflex {
+  display: flex;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.set-center {
+  text-align: center;
 }
